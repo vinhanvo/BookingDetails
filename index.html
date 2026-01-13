@@ -11,77 +11,72 @@
         <div class="header-section">
             <header class="header">
                 <div class="logoholder">
-                    <img class="logoicon" src="img\logoshipway.png" />            
-                    <div class="text-wrapper-3">Shipway</div>
+                    <img class="logoicon" src="img/logoshipway.png" alt="Logo"/>            
+                    <div class="text-wrapper-2" id="logo-header">Shipway</div>
                 </div>
                 <div class="frame-2">
-                    <div class="frame-3">
-                        <div class="user">
-                            <div class="username"><label class="text-wrapper-4" for="input-2">User name</label></div>
-                            <input class="name" placeholder="name" type="text" id="input-2" />
-                        </div>
-                    </div>
-                    <button class="button-wrapper"><div class="button-3">Đăng xuất</div></button>
+                    <div class="text-wrapper-3" id="user-name">User name</label></div>
+                    <button class="button-wrapper"><div class="button-3" id="btn-logout">Đăng xuất</div></button>
                 </div>
             </header>
         </div>
 
         <div class="booking-details">
             <div class="frame">
-                <div class="details-title">Chi tiết đơn hàng</div>
-                <div class="status"><div class="text-wrapper">Tìm tài xế</div></div>
-                <button class="button"><div class="button-2">Quay lại</div></button>
+                <div class="details-title" id="page-title">Chi tiết đơn hàng</div>
+                <div class="status"><div class="text-wrapper" id="order-status">Tìm tài xế</div></div>
+                <button class="button"><div class="button-back" id="btn-back">Quay lại</div></button>
             </div>
 
             <div class="details">
                 <div class="detail-row">
-                    <div class="label">Mã đơn hàng</div>
-                    <div class="value">#ABC001</div>
+                    <div class="label" id="label-order-id">Mã đơn hàng</div>
+                    <div class="value" id="order-id">#ABC001</div>
                 </div>
-                <div class="detail-row-2">
-                    <div class="label-2">Điểm nhận hàng</div>
-                    <p class="value-2">54 Nguyễn Lương Bằng, Phường Liên Chiểu, Thành phố Đà Nẵng</p>
+                <div class="detail-row">
+                    <div class="label" id="label-pickup">Điểm nhận hàng</div>
+                    <p class="value" id="pickup-location">54 Nguyễn Lương Bằng, Phường Liên Chiểu, Thành phố Đà Nẵng</p>
                 </div>
-                <div class="detail-row-2">
-                    <div class="label-2">Điểm trả hàng</div>
-                    <p class="value-2">
+                <div class="detail-row">
+                    <div class="label" id="label-delivery">Điểm trả hàng</div>
+                    <p class="value" id="delivery-location">
                         Khu nhà xưởng số 1, đường số 9, Khu Công nghệ cao Đà Nẵng, Xã Hòa Liên, Huyện Hòa Vang, Thành phố Đà Nẵng
                     </p>
                 </div>
-                <div class="detail-row-2">
-                    <div class="label-2">Loại hàng</div>
-                    <div class="value-2">Tên loại hàng</div>
+                <div class="detail-row">
+                    <div class="label" id="label-product">Loại hàng</div>
+                    <div class="value" id="product">Tên loại hàng</div>
                 </div>
-                <div class="detail-row-2">
-                    <div class="label-2">Kích thước</div>
-                    <p class="value-2">dài x rộng x cao</p>
+                <div class="detail-row">
+                    <div class="label" id="label-size">Kích thước</div>
+                    <p class="value" id="size">dài x rộng x cao</p>
                 </div>
-                <div class="detail-row-2">
-                    <div class="label-2">Trọng lượng</div>
-                    <p class="value-2">Chủ hàng tự ước tính</p>
+                <div class="detail-row">
+                    <div class="label" id="label-weight">Trọng lượng</div>
+                    <p class="value" id="weight">Chủ hàng tự ước tính</p>
                 </div>
-                <div class="detail-row-2">
-                    <div class="label-2">Tài xế</div>
-                    <div class="value-2">Chưa có</div>
+                <div class="detail-row">
+                    <div class="label" id="label-driver-name">Tài xế</div>
+                    <div class="value" id="driver-name">Chưa có</div>
                 </div>
-                <div class="detail-row-2">
-                    <div class="label-2">SĐT tài xế</div>
-                    <div class="value-2">Chưa có</div>
+                <div class="detail-row">
+                    <div class="label" id="label-driver-phone">SĐT tài xế</div>
+                    <div class="value" id="driver-phone">Chưa có</div>
                 </div>
-                    <div class="detail-row-2">
-                    <div class="label-2">Tổng tiền</div>
-                    <p class="value-2">Chủ hàng tự ước tính</p>
+                    <div class="detail-row">
+                    <div class="label" id="label-cost">Tổng tiền</div>
+                    <p class="value" id="cost">Chủ hàng tự ước tính</p>
                 </div>
-                <div class="detail-row-2">
-                    <div class="label-2">Ngày đặt</div>
-                    <div class="value-2">dd/mm/yyyy</div>
+                <div class="detail-row">
+                    <div class="label" id="label-date">Ngày đặt</div>
+                    <div class="value" id="date-create">dd/mm/yyyy</div>
                 </div>
-                <div class="detail-row-3">
-                    <div class="label-2">Ảnh hàng hoá</div>
+                <div class="detail-row">
+                    <div class="label" id="label-image-prod">Ảnh hàng hoá</div>
                     <div class="image-list">
-                        <div class="image-item"></div>
-                        <div class="image-item"></div>
-                        <div class="image-item"></div>
+                        <img class="image-item" id="image-container-1" src="img/box.jpg" onclick="openPopup(this.src)" />
+                        <img class="image-item" id="image-container-2" src="img/box.jpg" onclick="openPopup(this.src)" />
+                        <img class="image-item" id="image-container-3" src="img/box.jpg" onclick="openPopup(this.src)" />
                     </div>
                 </div>
             </div>
@@ -89,7 +84,24 @@
 
         <footer class="footer">
             <div class="footer-line"></div>
-            <p class="footer-text">© 2025 Công ty Cổ phần Shipway. All right reserved.</p>
+            <p class="footer-text" id="label-footer">© 2025 Công ty Cổ phần Shipway. All right reserved.</p>
         </footer>
+
+        <div id="imagePopup" class="popup-overlay" onclick="closePopup()">
+            <span class="close-btn">&times;</span>
+            <img class="popup-content" id="imgFull">
+        </div>
+
+        <script>
+            function openPopup(src) {
+                document.getElementById("imagePopup").style.display = "flex";
+                document.getElementById("imgFull").src = src;
+            }
+
+            function closePopup() {
+                document.getElementById("imagePopup").style.display = "none";
+            }
+        </script>   
+
     </body>
 </html>
