@@ -112,7 +112,6 @@
         <script src="data.js"></script>
 
         <script>
-            // Hàm đổ văn bản (Text)
             function renderApp() {
                 // Đổ dữ liệu Header & Tiêu đề
                 const headerMap = {
@@ -172,37 +171,35 @@
                     if (el) el.innerText = allMaps[id];
                 });
 
-                // 2. LOGIC XỬ LÝ STATUS (QUAN TRỌNG)
+                // 2. Đổi trạng thái 
                 const statusId = langData.values.statusId;
                 const statusBox = document.querySelector('.status');
                 const statusText = document.getElementById('order-status');
 
                 if (statusBox && statusText) {
-                    // Đổi chữ dựa trên ID
                     statusText.innerText = langData.header.statusTexts[statusId];
-                    // Đổi màu bằng cách thay class (Xóa class cũ, thêm class mới)
                     statusBox.className = `status state-${statusId}`;
                 }
 
-                //
+                // 3. Ẩn/hiện SĐT theo trạng thái
                 const phoneElement = document.getElementById('driver-phone');
 
                 if (phoneElement) {
-                    // Giả sử statusId = 3 là "Hoàn thành" theo yêu cầu mới của bạn
                     if (statusId == 3) {
                         phoneElement.innerText = langData.values.driverPhone;
-                        phoneElement.style.color = "#000000"; // Hiện màu chữ bình thường
+                        phoneElement.style.color = "#000000"; 
                     } else {
-                        // Các trạng thái khác (1, 2, 3) sẽ ẩn value
                         phoneElement.innerText = "********"; 
-                        phoneElement.style.color = "#cccccc"; // Làm mờ chữ đi một chút để tinh tế hơn
+                        phoneElement.style.color = "#cccccc"; 
                     }
                 }
             }
             document.addEventListener('DOMContentLoaded', renderApp);
         </script>
 
+        
         <script>
+            // Scroll to top
             document.getElementById('scroll-to-top').addEventListener('click', function() {
                 window.scrollTo({
                     top: 0,
