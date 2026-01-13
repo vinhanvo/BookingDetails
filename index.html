@@ -8,71 +8,77 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="header-section">
+        <div class="header-section" id="scroll-to-top" style="cursor: pointer;">
             <header class="header">
                 <div class="logoholder">
                     <img class="logoicon" src="img/logoshipway.png" alt="Logo"/>            
-                    <div class="text-wrapper-2" id="logo-header">Shipway</div>
+                    <div class="text-wrapper-2" id="logo-header"></div>
                 </div>
                 <div class="frame-2">
-                    <div class="text-wrapper-3" id="user-name">User name</label></div>
-                    <button class="button-wrapper"><div class="button-3" id="btn-logout">Đăng xuất</div></button>
+                    <a href="#" class="button-wallet" id="link-wallet">
+                        <div class="button-3" id="btn-wallet"></div>
+                    </a>
+                    <img class="user-avatar" id="user-avatar" src="img/box.jpg" alt="Avatar" />
+                    <a href="#" class="text-wrapper-3" id="user-name"></a>
+                    <a href="#" class="button-logout" id="link-logout">
+                        <div class="button-3" id="btn-logout"></div>
+                    </a>
                 </div>
             </header>
         </div>
 
         <div class="booking-details">
             <div class="frame">
-                <div class="details-title" id="page-title">Chi tiết đơn hàng</div>
-                <div class="status"><div class="text-wrapper" id="order-status">Tìm tài xế</div></div>
-                <button class="button"><div class="button-back" id="btn-back">Quay lại</div></button>
+                <div class="details-title" id="page-title"></div>
+                <div class="status"><div class="text-wrapper" id="order-status"></div></div>
+                <a href="#" class="button" id="link-back">
+                    <div class="button-back" id="btn-back"></div>
+                </a>
             </div>
 
             <div class="details">
                 <div class="detail-row">
-                    <div class="label" id="label-order-id">Mã đơn hàng</div>
-                    <div class="value" id="order-id">#ABC001</div>
+                    <div class="label" id="label-order-id"></div>
+                    <div class="value" id="order-id"></div>
                 </div>
                 <div class="detail-row">
-                    <div class="label" id="label-pickup">Điểm nhận hàng</div>
-                    <p class="value" id="pickup-location">54 Nguyễn Lương Bằng, Phường Liên Chiểu, Thành phố Đà Nẵng</p>
+                    <div class="label" id="label-pickup"></div>
+                    <p class="value" id="pickup-location"></p>
                 </div>
                 <div class="detail-row">
-                    <div class="label" id="label-delivery">Điểm trả hàng</div>
-                    <p class="value" id="delivery-location">
-                        Khu nhà xưởng số 1, đường số 9, Khu Công nghệ cao Đà Nẵng, Xã Hòa Liên, Huyện Hòa Vang, Thành phố Đà Nẵng
-                    </p>
+                    <div class="label" id="label-delivery"></div>
+                    <p class="value" id="delivery-location"></p>
                 </div>
                 <div class="detail-row">
-                    <div class="label" id="label-product">Loại hàng</div>
-                    <div class="value" id="product">Tên loại hàng</div>
+                    <div class="label" id="label-type"></div>
+                    <div class="value" id="type"></div>
                 </div>
                 <div class="detail-row">
-                    <div class="label" id="label-size">Kích thước</div>
-                    <p class="value" id="size">dài x rộng x cao</p>
+                    <div class="label" id="label-size"></div>
+                    <p class="value" id="size"></p>
                 </div>
                 <div class="detail-row">
-                    <div class="label" id="label-weight">Trọng lượng</div>
-                    <p class="value" id="weight">Chủ hàng tự ước tính</p>
+                    <div class="label" id="label-weight"></div>
+                    <p class="value" id="weight"></p>
                 </div>
                 <div class="detail-row">
-                    <div class="label" id="label-driver-name">Tài xế</div>
-                    <div class="value" id="driver-name">Chưa có</div>
+                    <div class="label" id="label-driver-name"></div>
+                    <div class="value" id="driver-name"></div>
                 </div>
                 <div class="detail-row">
-                    <div class="label" id="label-driver-phone">SĐT tài xế</div>
-                    <div class="value" id="driver-phone">Chưa có</div>
+                    <div class="label" id="label-driver-phone"></div>
+                    <div class="value" id="driver-phone"></div>
                 </div>
                     <div class="detail-row">
-                    <div class="label" id="label-cost">Tổng tiền</div>
-                    <p class="value" id="cost">Chủ hàng tự ước tính</p>
+                    <div class="label" id="label-cost"></div>
+                    <p class="value" id="cost"></p>
                 </div>
                 <div class="detail-row">
-                    <div class="label" id="label-date">Ngày đặt</div>
-                    <div class="value" id="date-create">dd/mm/yyyy</div>
+                    <div class="label" id="label-date"></div>
+                    <div class="value" id="date-create"></div>
                 </div>
                 <div class="detail-row">
-                    <div class="label" id="label-image-prod">Ảnh hàng hoá</div>
+                    <div class="label" id="label-image"></div>
                     <div class="image-list">
                         <img class="image-item" id="image-container-1" src="img/box.jpg" onclick="openPopup(this.src)" />
                         <img class="image-item" id="image-container-2" src="img/box.jpg" onclick="openPopup(this.src)" />
@@ -84,7 +90,7 @@
 
         <footer class="footer">
             <div class="footer-line"></div>
-            <p class="footer-text" id="label-footer">© 2025 Công ty Cổ phần Shipway. All right reserved.</p>
+            <p class="footer-text" id="label-footer"></p>
         </footer>
 
         <div id="imagePopup" class="popup-overlay" onclick="closePopup()">
@@ -102,6 +108,108 @@
                 document.getElementById("imagePopup").style.display = "none";
             }
         </script>   
+
+        <script src="data.js"></script>
+
+        <script>
+            // Hàm đổ văn bản (Text)
+            function renderApp() {
+                // Đổ dữ liệu Header & Tiêu đề
+                const headerMap = {
+                    'logo-header': langData.header.logoHeader,
+                    'btn-wallet': langData.header.wallet,
+                    'user-name': langData.header.userName,
+                    'btn-logout': langData.header.logout,
+                    'page-title': langData.header.title,
+                    'order-status': langData.header.status1,
+                    'btn-back': langData.header.back,
+                    'label-footer': langData.header.footer
+                };
+
+                // Đổ dữ liệu Label & Value cho các hàng thông tin
+                const detailsMap = {
+                    'label-order-id': langData.labels.orderId,
+                    'order-id': langData.values.orderId,
+                    'label-pickup': langData.labels.pickup,
+                    'pickup-location': langData.values.pickup,
+                    'label-delivery': langData.labels.delivery,
+                    'delivery-location': langData.values.delivery,
+                    'label-image': langData.labels.images,
+                    'label-type': langData.labels.type,
+                    'type': langData.values.type,
+                    'label-size': langData.labels.size,
+                    'size': langData.values.size,
+                    'label-weight': langData.labels.weight,
+                    'weight': langData.values.weight,
+                    'label-driver-name': langData.labels.driver,
+                    'driver-name': langData.values.driver,
+                    'label-driver-phone': langData.labels.driverPhone,
+                    'driver-phone': langData.values.driverPhone,
+                    'label-cost': langData.labels.cost,
+                    'cost': langData.values.cost,
+                    'label-date': langData.labels.date,
+                    'date-create': langData.values.date,
+                };
+                
+                const links = {
+                    'user-name': langData.header.userLink,
+                    'link-logout': langData.header.logoutLink,
+                    'link-back': langData.header.backLink,
+                    'link-wallet': langData.header.walletLink
+                };
+
+                Object.keys(links).forEach(id => {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.href = links[id];
+                    }
+                });
+
+                // Gộp và thực thi đổ text tự động
+                const allMaps = { ...headerMap, ...detailsMap };
+                Object.keys(allMaps).forEach(id => {
+                    const el = document.getElementById(id);
+                    if (el) el.innerText = allMaps[id];
+                });
+
+                // 2. LOGIC XỬ LÝ STATUS (QUAN TRỌNG)
+                const statusId = langData.values.statusId;
+                const statusBox = document.querySelector('.status');
+                const statusText = document.getElementById('order-status');
+
+                if (statusBox && statusText) {
+                    // Đổi chữ dựa trên ID
+                    statusText.innerText = langData.header.statusTexts[statusId];
+                    // Đổi màu bằng cách thay class (Xóa class cũ, thêm class mới)
+                    statusBox.className = `status state-${statusId}`;
+                }
+
+                //
+                const phoneElement = document.getElementById('driver-phone');
+
+                if (phoneElement) {
+                    // Giả sử statusId = 3 là "Hoàn thành" theo yêu cầu mới của bạn
+                    if (statusId == 3) {
+                        phoneElement.innerText = langData.values.driverPhone;
+                        phoneElement.style.color = "#000000"; // Hiện màu chữ bình thường
+                    } else {
+                        // Các trạng thái khác (1, 2, 3) sẽ ẩn value
+                        phoneElement.innerText = "********"; 
+                        phoneElement.style.color = "#cccccc"; // Làm mờ chữ đi một chút để tinh tế hơn
+                    }
+                }
+            }
+            document.addEventListener('DOMContentLoaded', renderApp);
+        </script>
+
+        <script>
+            document.getElementById('scroll-to-top').addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' 
+                });
+            });
+        </script>
 
     </body>
 </html>
