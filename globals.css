@@ -6,7 +6,10 @@
 html,
 body {
   margin: 0px;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 /* a blue color as a generic focus style */
 button:focus-visible {
